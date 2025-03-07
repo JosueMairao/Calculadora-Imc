@@ -4,8 +4,6 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 const val KEY_RESULT_IMC= "ResultActivity.KEY_IMC"
 
@@ -21,21 +19,42 @@ class ResultActivity: AppCompatActivity() {
         val tvClassificacao =findViewById<TextView>(R.id.tv_classificacao)
         tvResult.text=result.toString()
 
-        var classificao :String?  =if(result <= 18.5f) {
+        val classificao: String = when {
+            result <= 18.5f -> {
 
-            "Magreza"
-        } else if (result > 18.5f && result <=24.9f){
-            "Normal"
-        }  else if(result > 25f && result <= 29.9f) {
-            "SOBREPESO"
-        }  else if(result > 30f && result <= 39.9f) {
-            "OBESIDADE"
-        }   else {
-            "OBESIDADE GRAVE"
+                tvClassificacao.setTextColor(resources.getColor(R.color.magreza))
+                "Magreza"
+            }
+            result in 18.5f..24.9f -> {
 
+                tvClassificacao.setTextColor(resources.getColor(R.color.normal))
+                "Normal"
+            }
+            result in 25f..29.9f -> {
+
+                tvClassificacao.setTextColor(resources.getColor(R.color.sobrepeso))
+                "SOBREPESO"
+            }
+            result in 30f..39.9f -> {
+
+                tvClassificacao.setTextColor(resources.getColor(R.color.obesidade))
+                "OBESIDADE"
+            }
+            else -> {
+
+                tvClassificacao.setTextColor(resources.getColor(R.color.obesidade_grave))
+                "OBESIDADE GRAVE"
+            }
         }
 
-        tvClassificacao.text = classificao
-    }
 
-}
+
+
+        tvClassificacao.text = classificao
+
+            }
+        }
+
+
+
+
