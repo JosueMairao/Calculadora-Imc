@@ -1,19 +1,31 @@
 # Calculadora IMC
-Desc
+Esta es una calculadora simple de IMC (Índice de Masa Corporal) desarrollada en programacion linguaje Kotlin,Permite calcular el IMC en base al peso y la altura ingresados por el usuario y proporciona la clasificación del IMC según los valores obtenidos.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+<img src="https://github.com/user-attachments/assets/b916a4fa-ce12-46b0-8f91-b14420787db6" width=200/> <img src="https://github.com/user-attachments/assets/e5ef5b36-6a2d-4cd9-afc8-05c4c7ff6f8e" width=200/>
+
+
 
 ## Tecnologias
-Techs
+-activitiy
+-intent
+-snackbar
+-viewgroups
+-linearLayout
+-ConstraintLayout
+-views
+ -imageView
+ -textView
+ -editText
+ -Button
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2025 Roque Buarque Junior
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
