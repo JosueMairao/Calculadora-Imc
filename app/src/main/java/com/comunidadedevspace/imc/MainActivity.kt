@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 )
                     .show()
 
-            } else{
+            } else{ 70
              val  peso =pesoStr.toFloat()
              val  altura = alturaStr.toFloat()
 
