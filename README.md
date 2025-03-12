@@ -25,7 +25,7 @@ Esta es una calculadora simple de IMC (Índice de Masa Corporal) desarrollada en
 ```
 The MIT License (MIT)
 
-Copyright (c) 2025 Roque Buarque Junior
+Copyright (c) 2025 Josue Goncalves Mairao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
